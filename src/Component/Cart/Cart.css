@@ -1,0 +1,143 @@
+.cart {
+  width: 60vw;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #020333;
+  max-height: 35rem;
+  overflow: scroll;
+  box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+}
+
+@media only screen and (max-width: 600px) {
+  .cart {
+    width: 145vw;
+  }
+  .cart-column {
+    font-size: 15px;
+  }
+}
+
+.cart_header {
+  background-image: rgb(202, 243, 236);
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  margin: 0.5rem;
+  font-size: 20px;
+}
+
+.title {
+  color: #020333;
+  font-weight: 500;
+}
+
+.close_btn {
+  background-image: linear-gradient(150deg, #020333, #2ebf91);
+  width: 3rem;
+  height: 1.8rem;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+.close_btn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(#020333, #2ebf91),
+    linear-gradient(#020333, #2ebf91);
+}
+
+.second_header {
+  margin: 1rem;
+  height: 2rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.second {
+  display: flex;
+  justify-content: space-around;
+  height: 1.9rem;
+  width: 20rem;
+}
+@media only screen and (max-width: 600px) {
+  .second {
+    width: 10rem;
+  }
+}
+
+.column {
+  border: 1px solid gray;
+  border-radius: 50%;
+  width: 1.8rem;
+  text-align: center;
+  height: 1.5rem;
+}
+
+.line {
+  background: #2ebf91;
+  margin-top: 0.7rem;
+  height: 5px;
+}
+.third {
+  display: flex;
+  justify-content: flex-end;
+  height: 2rem;
+  text-align: center;
+  column-gap: 10px;
+}
+
+.third label {
+  display: block;
+}
+
+.cart-row {
+  margin: 4rem 1rem 1rem 1rem;
+  color: #020333;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: 50% 15% 15% 15%;
+  text-align: center;
+}
+
+.summary {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary_table {
+  line-height: 0.5rem;
+
+  font-size: 1rem;
+}
+
+.summary_row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+  height: 1.9rem;
+}
+
+.coupan input:focus {
+  border-radius: 1px solid gray;
+}
+
+.btn {
+  background-image: linear-gradient(150deg, #020333, #2ebf91);
+  width: 8rem;
+  height: 1.8rem;
+  border: none;
+  color: white;
+  margin-right: 0.5rem;
+  font-size: 13px;
+  margin-top: 0.8rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(#020333, #2ebf91),
+    linear-gradient(#020333, #2ebf91);
+}

@@ -1,0 +1,33 @@
+.about {
+  font-size: 22px;
+  width: 85%;
+  padding-top: 4.5rem;
+}
+.about h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding-left: 14.5rem;
+  color: #020333;
+}
+.divi {
+  text-align: left;
+  padding-left: 160px;
+}
+
+.picture {
+  float: left;
+  margin: 20px 50px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin-left: 100px;
+}
+.para {
+  padding-top: 30px;
+  padding-left: 30px;
+  font-size: 17px;
+  margin: 20px;
+  color: #777;
+  position: relative;
+}

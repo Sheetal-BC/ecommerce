@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./Component/Navbar/Navbar";
+import Item from "./Component/Pages/Item";
+import Cart from "./Component/Cart/Cart";
+import Footer from "./Component/Footer/Footer";
+import About from "./Component/Pages/About";
+import Home from "./Component/Pages/Home";
+
+import "./App.css";
+
+import { Route, Switch } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function App() {
+  const show = useSelector((state) => state.name.showCart);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/product">
+          <Item />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+      </Switch>
+      {show && <Cart />}
+      <Footer />
     </div>
   );
 }

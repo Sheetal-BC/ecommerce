@@ -1,0 +1,46 @@
+.footer {
+  background-image: linear-gradient(150deg, #020333, #2ebf91);
+  height: 100px;
+  color: white;
+  box-shadow: 0 0 15px 0 rgb(0 0 0 / 15%);
+  padding-top: 2.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    width: 600px;
+  }
+}
+
+a.social {
+  margin-right: 2.2rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+a.social:hover {
+  transform: translateY(-2px);
+}
+a.youtube {
+  color: whitesmoke;
+}
+
+a.twitter {
+  color: whitesmoke;
+}
+
+a.instagram {
+  color: whitesmoke;
+}
+
+a.facebook {
+  color: whitesmoke;
+}
+
+a.linkedin {
+  color: whitesmoke;
+}
+
+a.quora {
+  color: whitesmoke;
+}
