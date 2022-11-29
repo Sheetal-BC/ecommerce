@@ -1,0 +1,86 @@
+.content {
+  line-height: 15px;
+}
+
+.product_img {
+  width: 15rem;
+  height: 11rem;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.align_cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_title {
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 15px;
+}
+
+.product_price {
+  font-size: 25px;
+  font-weight: 600;
+  padding-right: 15px;
+  color: #020333;
+}
+
+.product_dec {
+  font-weight: 400;
+  padding-left: 15px;
+}
+.addCart_btn {
+  background-image: linear-gradient(150deg, #020333, #2ebf91);
+  border: none;
+  margin-left: 2.1rem;
+  width: 11rem;
+  height: 2.2rem;
+  border-radius: 15px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 10px;
+  transition: color 0.5s ease-in-out;
+}
+
+.addCart_btn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(#020333, #2ebf91),
+    linear-gradient(#020333, #2ebf91);
+}
+
+.addRemove_btn {
+  text-align: center;
+}
+
+.addRemove_btn input {
+  width: 6rem;
+  height: 2rem;
+  text-align: center;
+  margin-right: 10px;
+  position: relative;
+  bottom: 4px;
+}
+
+.addRemove_btn button {
+  background-image: linear-gradient(150deg, #020333, #2ebf91);
+  border: none;
+  margin-right: 10px;
+  width: 2.5rem;
+  height: 2rem;
+  border-radius: 20%;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.addRemove_btn button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(#020333, #2ebf91),
+    linear-gradient(#020333, #2ebf91);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}

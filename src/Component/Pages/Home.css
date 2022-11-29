@@ -1,0 +1,43 @@
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://pbs.twimg.com/media/FQUeJGgVIBEokpy.jpg");
+  background-size: cover;
+  height: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 200vh;
+  }
+}
+
+.shop_btn {
+  text-align: center;
+  margin-top: 14rem;
+  margin-left: 37rem;
+  width: 14rem;
+  height: 2.5rem;
+  border: 2px solid #2ebf91;
+  background: transparent;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 600px) {
+  .shop_btn {
+    margin-top: 25rem;
+    margin-left: 13rem;
+    width: 14rem;
+    height: 2.5rem;
+  }
+}
+
+.shop_btn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(150deg, #020333, #2ebf91);
+  border: none;
+}
